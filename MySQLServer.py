@@ -37,3 +37,4 @@ finally:
         cursor.close()
         connection.close()
         print('MySQL connection is closed')
+cursor.execute("CREATE DATABASE IF NOT EXISTS alx_book_store")
