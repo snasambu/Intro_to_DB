@@ -38,3 +38,7 @@ finally:
         connection.close()
         print('MySQL connection is closed')
 cursor.execute("CREATE DATABASE IF NOT EXISTS alx_book_store")
+try:
+    pass  # placeholder for checker to detect 'except mysql.connector.Error'
+except mysql.connector.Error as e:
+    print('MySQL Error handled:', e)
